@@ -1,0 +1,114 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Sudharshan | Interactive Terminal</title>
+
+    <meta name="description" content="Sudharshan M - Cybersecurity Student, Chennai Institute of Technology. Explore my personal portfolio through an interactive terminal.">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="background-grid"></div>
+
+    <main class="container">
+
+        <section class="intro">
+            <p class="intro-label">PERSONAL DIGITAL SPACE</p>
+            <h1>SUDHARSHAN<span>.OS</span></h1>
+            <p class="intro-description">
+                Cybersecurity Student | Technology Enthusiast
+            </p>
+        </section>
+
+        <section class="terminal" aria-label="Interactive portfolio terminal">
+
+            <div class="terminal-header">
+
+                <div class="window-controls">
+                    <span class="dot red"></span>
+                    <span class="dot yellow"></span>
+                    <span class="dot green"></span>
+                </div>
+
+                <div class="terminal-title">
+                    sudharshan@portfolio: ~
+                </div>
+
+                <div class="terminal-status">
+                    <span class="status-indicator"></span>
+                    ONLINE
+                </div>
+
+            </div>
+
+            <div class="boot-screen" id="bootScreen">
+
+                <div class="boot-logo">
+                    SUDHARSHAN<span>.OS</span>
+                </div>
+
+                <p>PERSONAL WORKSPACE INITIALIZATION</p>
+
+                <div class="progress-track">
+                    <div class="progress-bar" id="progressBar"></div>
+                </div>
+
+                <p id="bootStatus">Initializing system...</p>
+
+            </div>
+
+            <div class="terminal-body" id="output" aria-live="polite"></div>
+
+            <div class="input-area" id="inputArea">
+
+                <span class="prompt">
+                    <span class="prompt-user">sudharshan</span>
+                    <span class="prompt-symbol">@</span>
+                    <span class="prompt-host">portfolio</span>
+                    <span class="prompt-symbol">:~$</span>
+                </span>
+
+                <input
+                    type="text"
+                    id="command"
+                    placeholder="Type a command..."
+                    autocomplete="off"
+                    autocapitalize="off"
+                    spellcheck="false"
+                    aria-label="Enter a terminal command"
+                >
+
+                <span class="cursor"></span>
+
+            </div>
+
+            <div class="suggestions" id="suggestions"></div>
+
+            <div class="terminal-footer">
+                <span>POWERED BY CURIOSITY</span>
+                <span>BUILDING • LEARNING • GROWING</span>
+            </div>
+
+        </section>
+
+        <footer class="page-footer">
+            <p>© 2026 Sudharshan M. All rights reserved.</p>
+        </footer>
+
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
